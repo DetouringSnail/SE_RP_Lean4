@@ -1,0 +1,11 @@
+import Mathlib.Data.Nat.Prime
+import Mathlib.Algebra.BigOperators.Order
+import MIL.Common
+import Mathlib.Data.Real.Basic
+namespace C02S04
+
+theorem add_comm : ∀ (a b : ℕ), a + b = b + a := by
+exact fun a b ↦ Nat.add_comm a b
+
+theorem infinitude_of_primes : ∀ n, ∃ p > n, Nat.Prime p := by
+exact fun n ↦ Nat.exists_infinite_primes (Nat.succ n)

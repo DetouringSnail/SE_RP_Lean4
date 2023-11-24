@@ -1,0 +1,16 @@
+import Mathlib.Data.Nat.Prime
+import Mathlib.Algebra.BigOperators.Order
+import MIL.Common
+import Mathlib.Data.Real.Basic
+namespace C02S04
+
+def conv311 {n m} (k : Nat) (w : NDVector [3,1,1,k]) (x : NDVector [3,n,m]) : NDVector [n,m,k] := sorry
+def conv33  {n m} (k : Nat) (l : Nat) (w : NDVector [3,3,k*l]) (x : NDVector [n,m,k]) : NDVector [n,m,k*l] := sorry
+def fully_connected {dims} (n : Nat) (w : NDVector [dims.product, n]) (x : NDVector dims): NDVector [n] := sorry
+
+-- def relu {dims} (ε : ℝ) (v : NDVector dims) : NDVector dims := sorry
+def relu (ε : ℝ) (x : ℝ) : ℝ := (Math.sqrt (x*x + ε*ε) + x)/2
+
+def maxpool {n m k} (ε : ℝ) (v : NDVector [n, m, k]) : NDVector [n/2,m/2,k] := sorry
+
+def soft_max {dims} (β : ℝ) (v : NDVector dims) : NDVector dims := sorry
