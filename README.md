@@ -1,5 +1,9 @@
 # SE_RP_Lean4 
 Research project for X Y and Z  
 Software engineering, Polimi
-## Here are all the three versions of our RP report ( You can just facus on the latest one)
+## Here are all the three versions of our RP report ( You can just focus on the latest one)  
+The folder "hello_word" is just a basic HelloWord in Lean.  
+The folder "temp_lean" contains some codes mentions in our first-version report.
+The folder "Code_v3" contains most of the codes mentions in our third-version report.
+
 
